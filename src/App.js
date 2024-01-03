@@ -7,6 +7,10 @@ import PostWritePage from './page/PostWritePage';
 import MainPage from './page/MainPage';
 import PostViewPage from './page/PostViewPage';
 
+import Button2 from './new/ui2/Button2';
+import TextInput2 from './new/ui2/TextInput2'
+import MyPageHome from './new/page2/MyPageHome';
+
 const MainTitleText = styled.p`
   font-size: 24px;
   font-weight: bold;
@@ -15,7 +19,7 @@ const MainTitleText = styled.p`
 
 function App() {
   return (
-    // <div className="App">
+    <div className="App">
     <BrowserRouter>
       <MainTitleText>소플의 미니 블로그</MainTitleText>
       <Routes>
@@ -24,7 +28,8 @@ function App() {
         <Route path="post/:postId" element={<PostViewPage /> } />
       </Routes>
     </BrowserRouter>
-    // </div>
+    </div>
+    // <MyPageHome></MyPageHome>
   );
 }
 
